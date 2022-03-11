@@ -1,9 +1,14 @@
 Form Button {
-  width: 100%;
+  width: 20%;
   background-color: #3B8795 !important;
-  margin: 15px 8px 8px 8px;
+  margin: 8px 8px 8px 8px;
 }
+
 input.form-control{
+  margin: 8px;
+}
+
+input.form-control-send{
   margin: 8px;
 }
 
@@ -12,7 +17,7 @@ h2 {
 }
 
 h6 {
-  color: greenyellow;
+  color: #3B8795;
 }
 
 hr.line {
@@ -45,10 +50,10 @@ hr.line {
 
 .user-list {
   float: left;
-  background-color: #313131;
+  background-color: #a5bebd;
   color:white;
   width: 200px;
-  height: 440px;
+  height: 455px;
   margin-right: 4px;
 }
 

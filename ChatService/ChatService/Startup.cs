@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Collections.Generic;
 
 namespace ChatService
 {
@@ -21,6 +22,7 @@ namespace ChatService
                     .AllowCredentials();
                 });
             });
+            services.AddSingleton<IDictionary<string, UserConnection>>(opts => new Dictionary<string, UserConnection>());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
